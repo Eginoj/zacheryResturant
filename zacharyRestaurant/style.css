@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  line-break: 1.6;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  /* overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory; */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgb(0, 0, 0, 0.7);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f4f4f4;
+}
+
+.navbar ul li a:hover {
+  color: skyblue;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.dropdown a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown a:hover {
+  background-color: rgba(92, 92, 92, 0.7);
+}
+
+.navbar ul li:hover .dropdown {
+  display: block;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+section img {
+  max-width: 80%;
+}
+
+section h1 {
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px black;
+}
+
+section p {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px black;
+}
+.header2 {
+  font-size: 2rem;
+  letter-spacing: 0.2em;
+  line-height: 100%;
+}
+.header {
+  font-size: 2.5rem;
+  line-height: 240%;
+}
+
+/* Section Images */
+
+section#home {
+  background: url("https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80")
+    no-repeat center center/cover;
+}
+
+section#about {
+  background: url("https://www.zachrys-restaurant.com/images/image03.jpg")
+    no-repeat center center/cover;
+}
+
+/* map options*/
+
+#map {
+  height: 400px;
+  width: 75%;
+}
+
+/* menu */
+
+.row {
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+.space-text {
+  padding: 0.5rem;
+}
+.content2 {
+  padding: 1rem;
+}
+.foodhead {
+  font-size: 1.5rem;
+  text-align: left;
+  text-shadow: none;
+}
+
+.foodDis {
+  font-size: 1.1rem;
+  text-align: left;
+  text-shadow: none;
+}
+
+section#contact {
+  background: linear-gradient(rgba(0, 130, 170, 0.5), rgba(0, 130, 170, 0.5)),
+    url("http://www.zachrys-restaurant.com/images/image01.jpg") no-repeat center
+      center/cover;
+}
+
+/* font icon style */
+.fab_custom {
+  color: #fff;
+}
+
+.fas_custom {
+  color: #fff;
+}
